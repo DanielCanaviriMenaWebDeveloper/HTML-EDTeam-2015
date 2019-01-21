@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Clase 2: Estructura semántica</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Clase 2 del curso HTML 5 Desde Cero de Escuela Digital">
+        <link rel="icon" href="imagen.ico">
+        <!--
+            <style>/* Usar css para cambiar los estilos y no las etiquetas HTML */
+                h1 {
+                    font-size: 10px; /* Tamaño de fuente */
+                    color:red;     /* Color de fuente */  
+                }
+                h6 {
+                    font-size: 80px;
+                    color: green;
+                }
+            </style>
+        -->
+
+        <style>
+            img{
+                width: 250px; /* Ancho de la Imagen */
+                height: auto; /* Alto de la Imagen automático */
+            }
+          
+        </style>
+    </head>
+    <body>
+        <!-- Cada elemento tiene un siginificado semánticamente -->
+        <!-- Etiquetas básicas de HTML: Encabezados  -->
+        <!-- Los que muestran titulos y subtitulos -->
+        <h1>Encabezado 1</h1><!-- H de Header = Encabezado, El numero indica el nivel -->
+        <h2>Encabezado 2</h2><!-- Indican jerarquía -->
+        <h3>Encabezado 3</h3>
+        <h4>Encabezado 4</h4>
+        <h5>Encabezado 5</h5>
+        <h6>Encabezado 6</h6>
+        <center>Hola que tal</center> <!-- Permite centrar un texto : Etiqueta obsoleta en HTML5 -->
+        <hgroup> <!-- Etiqueta obsoleta en HTML5 -->
+            <h1>Don Quijote de la Mancha</h1>
+            <h2>Por Miguel Cervantes Savedra</h2>
+        </hgroup>
+
+        <!-- Los párrafos son bloques de texto -->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nisi doloribus provident possimus velit facere vitae odit. Accusantium autem odit, qui molestiae iure a labore in culpa dolorem nobis quas.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illo temporibus fuga unde. Sequi et atque, accusamus eius laudantium necessitatibus possimus voluptate. Vitae rerum ducimus itaque libero, nam expedita at.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora nihil pariatur ratione qui consequatur doloremque, maiores itaque tenetur quia expedita praesentium sunt porro autem veritatis et illum neque veniam aliquam.
+        </p>
+
+        <!-- Elementos de bloque (block) y elementos de linea (inline) 
+
+        display: block;  // Propiedad en css que le dice a un elemento que no es block, que se comporte como si fuera un block
+        display: inline; // Propiedad en css que le dice a un elemento que no es inline, que se comporte como si fuera un inline
+        display: inline-block;
+
+        Los elementos "inline" se colocan uno al lado del otro hasta completar el espacion disponible, luego se colocan uno debajo del otro. 
+        <img>
+        <input>
+        <label>
+        <a>
+        <span>
+        
+        Los elementos "block" reservan todo el espacio horizontal aunque no lo ocupen por completo.
+        <h1>-<h6>
+        <p></p>
+        <li>
+        
+        -->
+
+        
+        <p><img src="foto.jpg"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis et fugiat fuga temporibus quisquam omnis, nostrum sapiente libero exercitationem! Earum tenetur est dolorum deserunt hic nulla ipsa iste ducimus a sint quos, aliquid error nisi nobis facere quibusdam porro praesentium vero voluptatum? Vero, autem ut. Atque possimus cum error inventore itaque sapiente, quidem quas veritatis, at reprehenderit quia expedita nostrum, consectetur assumenda exercitationem enim voluptates maiores perferendis. Non est aperiam suscipit corporis, temporibus aliquam blanditiis! Id similique quisquam veritatis sapiente,illo porro dignissimos perspiciatis odio optio amet quas nam molestiae quasi suscipit labore atque inventore natus corrupti, necessitatibus expedita enim quaerat nisi nemo ex. Soluta distinctio odio illo numquam saepe accusamus natus doloribus ratione vero deserunt sit ducimus ab, modi doloremque ipsa qui in quod et, eveniet dicta nesciunt unde asperiores. Omnis maxime tenetur, aliquam in asperiores iure quam quas maiores saepe vitae id possimus assumenda eum, modi quo optio sint corrupti neque alias iusto? Numquam reiciendis expedita placeat dolorem dolor eos nulla dicta qui, porro, perspiciatis officia necessitatibus ipsa aliquam consequatur adipisci quam culpa sapiente delectus nostrum soluta dignissimos minima aspernatur. Totam exercitationem tempore aliquam illo similique vitae! Dolore eum cum iure molestias in enim sequi aliquam consequatur? </p>
+        <img src="foto.jpg">
+        <img src="foto.jpg">
+        <img src="foto.jpg">
+        <img src="foto.jpg">
+        <img src="foto.jpg">
+        <img src="foto.jpg">
+        <img src="foto.jpg">
+        <img src="foto.jpg">
+        <img src="foto.jpg">
+        <img src="foto.jpg">
+        <img src="foto.jpg">
+        <img src="foto.jpg">
+
+        <h1>Elementos en forma inline </h1>
+
+        <!-- Otra forma -->
+        <img src="foto.jpg"> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis et fugiat fuga temporibus quisquam omnis, nostrum sapiente libero exercitationem! Earum tenetur est dolorum deserunt hic nulla ipsa iste ducimus a sint quos, aliquid error nisi nobis facere quibusdam porro praesentium vero voluptatum? Vero, autem ut. Atque possimus cum error inventore itaque sapiente, quidem quas veritatis, at reprehenderit quia expedita nostrum, consectetur assumenda exercitationem enim voluptates maiores perferendis. Non est aperiam suscipit corporis, temporibus aliquam blanditiis! Id similique quisquam veritatis sapiente,illo porro dignissimos perspiciatis odio optio amet quas nam molestiae quasi suscipit labore atque inventore natus corrupti, necessitatibus expedita enim quaerat nisi nemo ex. Soluta distinctio odio illo numquam saepe accusamus natus doloribus ratione vero deserunt sit ducimus ab, modi doloremque ipsa qui in quod et, eveniet dicta nesciunt unde asperiores. Omnis maxime tenetur, aliquam in asperiores iure quam quas maiores saepe vitae id possimus assumenda eum, modi quo optio sint corrupti neque alias iusto? Numquam reiciendis expedita placeat dolorem dolor eos nulla dicta qui, porro, perspiciatis officia necessitatibus ipsa aliquam consequatur adipisci quam culpa sapiente delectus nostrum soluta dignissimos minima aspernatur. Totam exercitationem tempore aliquam illo similique vitae! Dolore eum cum iure molestias in enim sequi aliquam consequatur? </span>
+        <div>
+            <img src="foto.jpg">
+            <img src="foto.jpg">
+            <img src="foto.jpg">
+            <img src="foto.jpg">
+            <img src="foto.jpg">
+            <img src="foto.jpg">
+            <img src="foto.jpg">
+            <img src="foto.jpg">
+            <img src="foto.jpg">
+            <img src="foto.jpg">
+            <img src="foto.jpg">
+            <img src="foto.jpg">
+        </div>
+
+    </body>
+</html>

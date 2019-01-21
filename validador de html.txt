@@ -1,0 +1,4 @@
+https://validator.w3.org 
+
+Sitio web que sirve para poder ver si tu codigo html no tiene errores o adevertencias que mostrar.
+Tambien ayuda a ver si algunas etiquetas son obsoletas en html5.
