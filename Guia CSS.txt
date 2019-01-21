@@ -4,7 +4,7 @@ Propiedades: Donde X pertenece a los Enteros Positivos
 
 font-size: X;    // Tamaño de la fuente //body
 line-height: X;  // Alto de la linea //p, body 
-width: Xpx;    	 // Ancho //img
+width: Xpx;    	 // Ancho //img, p        -> Se puede usar porcentajes %
 height: Xpx;     // Alto  //img
 
  

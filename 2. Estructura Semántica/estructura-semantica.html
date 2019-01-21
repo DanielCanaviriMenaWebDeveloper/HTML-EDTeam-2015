@@ -30,7 +30,7 @@
         <!-- Cada elemento tiene un siginificado semánticamente -->
         <!-- Etiquetas básicas de HTML: Encabezados  -->
         <!-- Los que muestran titulos y subtitulos -->
-        <h1>Encabezado 1</h1><!-- H de Header = Encabezado, El numero indica el nivel -->
+        <h1>Encabezado 1</h1><!-- H de Heading = Título, El numero indica el nivel -->
         <h2>Encabezado 2</h2><!-- Indican jerarquía -->
         <h3>Encabezado 3</h3>
         <h4>Encabezado 4</h4>
@@ -65,6 +65,7 @@
         <h1>-<h6>
         <p></p>
         <li>
+        <div>
         
         -->
 
@@ -100,7 +101,36 @@
             <img src="foto.jpg">
             <img src="foto.jpg">
             <img src="foto.jpg">
+            <img src="foto.jpg">
+            <img src="foto.jpg">
+            <img src="foto.jpg">
         </div>
+        <!-- Estructuras Semántica 
+        En HTML4 habia muy pocas etiquetas semánticas. Para los casos en que no habia una etiqueta especifica
+        se usaban dos etiquetas genéricas:
+        
+        <div></div> (block)
+        <span></span> (inline)
 
+        HTML5 introduce nuevas etiquetas semánticas para elementos block e inline.
+
+        Para elementos block:
+            
+            header (encabezado)
+            nav    (navegación, para poner menus)
+            footer (pie de página)
+            article (contenido independiente)
+            aside   (contenido relacionado pero secundario)
+            section (secciones o divisiones de un contenido)
+            main (para mostrar el contenido principal, debe ser único)
+        -->
+
+        <section><!-- Si esta permitido colocar un article dentro un section -->
+            <h2>Esto es una sección</h2>
+            <article>
+                <h3>Esto es un articulo</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi vel illum commodi soluta distinctio repellendus officiis debitis. Dolorum facilis nobis vero quae. Necessitatibus dolor accusantium sint officiis corrupti est! Distinctio reiciendis sunt commodi libero animi, aspernatur itaque! Amet, fugiat nostrum? Quo iure aspernatur maiores error sunt quod quis natus at debitis fugiat, amet doloribus optio inventore ad voluptatibus officiis exercitationem fugit numquam dolorem sequi saepe. Consectetur quos excepturi perspiciatis officia iure ullam nihil omnis nisi distinctio inventore rerum modi, corporis odit accusamus, voluptates non quod ipsum? Aperiam facilis qui placeat, iste maxime tempore aliquam odio quae reiciendis eaque maiores atque tempora, quod inventore obcaecati et nihil, expedita sequi repellat! Vitae, excepturi veritatis quas quibusdam cumque eius temporibus corporis dolor natus officia corrupti debitis nemo nulla eaque? Quisquam porro deleniti, facere adipisci delectus, quis iste deserunt ratione doloremque quos quibusdam? Expedita quasi pariatur neque, magnam obcaecati saepe at aspernatur doloremque nobis a odit illum labore voluptate fuga, mollitia quibusdam velit minus? Sed at possimus cumque expedita nesciunt facilis delectus aperiam, cum perferendis rem distinctio ducimus voluptatum, hic vel repellat! Quibusdam doloremque tenetur ut modi delectus. Aliquam minus reprehenderit quae corrupti animi ab facere, est odio. Eius dolor tempore error. Reiciendis, illum?</p>
+            </article>
+        </section>
     </body>
 </html>
