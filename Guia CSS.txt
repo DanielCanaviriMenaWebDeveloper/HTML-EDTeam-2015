@@ -3,7 +3,8 @@ Etiquetas CSS3
 Propiedades: Donde X pertenece a los Enteros Positivos 
 
 font-size: X;    // Tamaño de la fuente //body
-line-height: X;  // Alto de la linea //p, body 
+line-height: X;  // Alto de la linea //p, body
+letter-spacing: Xem; // Espacio entre caracteres horizontal //p 
 width: Xpx;    	 // Ancho //img, p        -> Se puede usar porcentajes %
 height: Xpx;     // Alto  //img
 
