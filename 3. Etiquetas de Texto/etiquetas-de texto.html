@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Etiquetas de Semánticas de Texto</title>
+		<meta charset="utf-8">
+		<meta name="description" content="En esta clase hablaremos de la semántica del texto y los microdatos">
+		<link rel="icon" href="imagen.ico">
+		<style>
+			span {
+				font-size:.7em;
+				position: relative;
+				top: -.5em;
+			}
+			sup {
+				color: red;
+			}
+			sub {
+				color: green;
+			}
+			kbd,p code {
+				background: #eee;
+				border: 1px solid #ddd;
+				line-height: 1.5;
+				padding: 0 .5em;
+				display: inline-block; /* Como es en elemento en linea se le pide 
+										  que siga siendo inline y que herede algunas propiedades de tipo block 
+										  ya que los elementos en linea no tienen padding */
+				border-radius: 4px;
+			}
+			p code {
+				background: pink;
+			}
+			.poema{
+				text-align: center;
+				color: #555;
+				font-size: 1.4em;
+				line-height: 1.7;
+				font-family: Georgia;
+			}
+			h2{
+				text-align: center;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quia eius labore totam natus expedita distinctio excepturi. Expedita officia modi quisquam ratione dolor earum est dolorum possimus, aliquid accusamus sunt beatae nobis voluptatum. Molestias quaerat porro cum suscipit ea voluptates recusandae cupiditate dolorum, dolorem esse quia maxime doloremque, eius accusantium.</p>
+		<a href="http://cursos.escueladigital.pe">Ir a los cursos</a>
+
+		<!-- Etiquetas de línea
+		1. Etiquetas de formato
+		-->
+		<b>Bold text</b>       <!-- texto en negrita  -->
+		<i>Italic text</i>     <!-- texto en cursiva -->
+		<u>Underline text</u>  <!-- texto subrayado  -->
+		<sup>Superindice</sup> <!-- texto pequeño en la parte superior -->
+		<sub>Subindice</sub>   <!-- Texto pequeño en la parte inferior -->
+
+		<p>
+			Con css:
+			x<span>2</span> + y<span>2</span> = z<span>2</span>
+		</p>
+		<p>
+			Con html:
+			x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup>
+		</p>
+		<p>
+			CO<sub>2</sub>
+		</p>
+		<p>
+			<!-- <del></del> Tacha un texto y significa eliminado -->
+			Hoy, todos los productos a <del>Bs/.100.00</del> Bs/.50.00
+		</p>
+		<p>
+			<!-- <mark></mark> Resalta un texto e indica importancia -->
+			Estudiar para el lunes, de la página <mark>100 hasta la 120</mark.>
+		</p>
+
+		<!-- Etiquetas de línea 
+		
+		2. Etiquetas de código 
+		
+		<code></code>
+		<var></var>
+		<kbd><kbd>
+
+		-->
+		<p>Para abrir un archivo presionar <kbd>Ctrl</kbd> + <kbd>O</kbd></p>
+
+		<p>Las funciones se definen con la palabra <code>function</code>. Ejemplo de una función en JavaScript:</p>
+		<pre>
+			<code>
+				function(){
+					console.log("Hola mundo");
+				}
+			</code>
+		</pre>
+		
+		<article>
+			<h2>20 poemas de amor y una canción desesperada</h2>
+			<pre class="poema">
+Es la mañana llena de tempestad 
+en el corazón del verano. 
+Como pañuelos blancos de adiós viajan las nubes, 
+el viento las sacude con sus viajeras manos. 
+Innumerable corazón del viento 
+latiendo sobre nuestro silencio enamorado. 
+Zumbando entre los árboles, orquestal y divino, 
+como una lengua llena de guerras y de cantos. 
+Viento que lleva en rápido robo la hojarasca 
+y desvía las flechas latientes de los pájaros. 
+Viento que la derriba en ola sin espuma 
+y sustancia sin peso, y fuegos inclinado. 
+Se rompe y se sumerge su volumen de besos 
+combatido en la puerta del viento del verano.
+			</pre>
+		</article>
+
+		<!-- Etiquetas semánticas de texto: -
+			<strong> se usa para indicar importancia 
+			<em> se usa para indicar enfasis (leer en tono distinto)
+			
+			Citas:
+			<q></q> (en linea)
+			<blockquote></blockquote>
+		-->
+
+		<p>Sócrates dijo: <q><em>Solo sé que nada se</em></q>.</p>
+		<p>Sócrates dijo:</p>
+		<blockquote>
+			<em>Solo sé que nada se</em>
+		</blockquote>		
+		<!-- Investigar etiqueta cite -->
+		<p> <cite>Galileo Galilei</cite> dijo: "... y sin embargo, se mueve." </p>
+		<p>Para mayor información sobre el tema recurra al <cite>Diccionario de la lengua española.</cite></p>
+	</body>
+</html>

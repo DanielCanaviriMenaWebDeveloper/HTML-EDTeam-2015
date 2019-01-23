@@ -7,5 +7,5 @@ line-height: X;  // Alto de la linea //p, body
 letter-spacing: Xem; // Espacio entre caracteres horizontal //p 
 width: Xpx;    	 // Ancho //img, p        -> Se puede usar porcentajes %
 height: Xpx;     // Alto  //img
-
+font-weight: normal; //Peso de fuente  //strong
  
