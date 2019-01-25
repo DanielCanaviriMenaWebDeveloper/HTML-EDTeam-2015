@@ -1,0 +1,3 @@
+http://eschema.org/
+https://schema.org/Thing //Tipos de Datos Estructurado
+https://search.google.com/structured-data/testing-tool/u/0/?hl=es //Herramienta para testeo

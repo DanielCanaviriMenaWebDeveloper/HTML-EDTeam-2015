@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Microdata</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="imagen.ico">
+        <meta name="description" content="En este archivo se vera todo lo relacionado a microdatos">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta >
+    </head>
+    <body>
+        <!-- Permiten especificar el significado del texto. Usando un set de parametros especificados en schema.org. 
+             Se indican con atributos (son tres):
+            itemscope (indica el contexto, es un atributo booleano o vacío)
+            itemtype (indica el tipo de schema extraido de schema.org)
+            itemprop (indica el tipo de dato)
+        -->
+        <h1>Microdatos</h1>
+        <h2>Tipo Persona</h2>
+        <article itemscope itemtype="https://schema.org/Person">
+            <img itemprop="image" src="daniel.png" alt="Daniel Canaviri">
+            <h3 itemprop="name">Daniel Canaviri</h3>
+            <p itemprop="jobTitle">Director de proyectos de TecnologicWorld. Desarrollador y Diseñador web. Docente.</p>
+            <p itemprop="email">danielcanaviri@gmail.com</p>
+            <p itemprop="address">La Paz - Bolivia</p>
+        </article>
+
+        <h2>Datos sin Estructurar</h2>
+        <article>
+            <img src="daniel.png" alt="Daniel Canaviri">
+            <h3>Daniel Canaviri</h3>
+            <p>Director de proyectos de TecnologicWorld. Desarrollador y Diseñador web. Docente.</p>
+            <p>danielcanaviri@gmail.com</p>
+            <p>La Paz - Bolivia</p>
+        </article>
+
+        <h2>Tipo Libro</h2>
+        <article itemscope itemtype="https://schema.org/Book">
+            <img itemprop="image" src="libro.jpeg" alt="Libro">
+            <h3 itemprop="name">Los fundamentos del lenguaje Java</h3>
+            <p itemprop="about">El lenguaje Java se parece al lenguaje C++ de modo que un programador que conozca este lenguaje ha dado un gran paso adelante.</p>
+            <p itemprop="author">Thierry Groussard</p>
+            <p itemprop="copyrightYear">1992</p>
+        </article>
+    </body>
+</html>
