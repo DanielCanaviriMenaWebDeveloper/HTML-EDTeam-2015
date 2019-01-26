@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Clase 4 - Enlaces</title>
+        <meta charset="utf8">
+        <meta name="description" content="Este es un curso de enlaces">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="imagen.ico">
+    </head>
+    <body>
+        <h1>Clase 4 - Enlaces</h1>
+        <!-- 
+            Los enlaces se indican con la etiqueta <a></a> (de anchor=ancla) y requieren el atributo href="" que señalara su destino.    
+            
+            No confundir con la etiqueta <link>
+        -->
+
+        <a href="https://ed.team/">Ir a los cursos</a>
+        
+        <!-- Si queremos que el destino se abra en una nueva ventana (o pestaña) se usa el atributo target="_blank" -->
+
+        <p><a href="https://ed.team/" target="_blank">Ir a los cursos (en una nueva pestaña)</a></p>
+
+        <!-- 
+            Rutas 
+
+            Las rutas le indican al sistema como acceder a un recurso (como encontrarlo). Hay tres tipos de rutas:
+
+            * Absolutas: Son URL unicas, y comienzan con un protocolo(conjunto de reglas que permiten compartir archivos), el más conocido es http://(hay otros como https:// ftp://)
+            * Relativas: Son relativas al archivo de origen.
+                - Origen y destino en la misma carpeta: Se pone el nombre del archivo.
+                - El destino está en una subcarpeta: En ese caso se indica la ruta separando las carpetas con el signo / (slash) hasta llegar al archivo destino. Nunca se debe comenzar con un slash (/).
+                - Para subir de nivel se usa dos puntos y slash (../) Se puede repetir si es que se nesecita subir varios niveles.
+            * Relativas a la raiz
+                - 
+        -->
+        <p><a href="destino.html">Ir a destino</a></p>
+        <p><a href="subcarpeta/destino2.html">Ir a destino 2</a></p>
+        <p><a href="subcarpeta/subcarpeta2/destino3.html">Ir a destino 3</a></p>   
+
+    </body>
+</html>
