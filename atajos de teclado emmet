@@ -1,0 +1,83 @@
+Crear Etiqueta 
+Ej.
+h1 + tab  
+<h1></h1>
+
+=========================================
+
+Crear una Etiqueta dentro de otra (hijos)
+Ej.
+h1>p>span + tab
+<h1>
+    <p><span></span></p>
+</h1>
+
+Ej.
+h1>span>a + tab 
+<h1><span><a href=""></a></span></h1>
+
+=========================================
+
+Multiplicar Etiquetas
+Ej.
+p*3 + tab
+<p></p>
+<p></p>
+<p></p>
+
+Ej.
+div>ul>li*5 + tab
+<div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+Ej. 
+(div>p>img)*3
+<div>
+    <p><img src="" alt=""></p>
+</div>
+<div>
+    <p><img src="" alt=""></p>
+</div>
+<div>
+    <p><img src="" alt=""></p>
+</div>
+
+=========================================
+
+Colocar contenido dentro una Etiqueta
+Ej.
+p{Hola mundo} + tab
+<p>Hola mundo</p>
+
+Ej.
+p{Hola mundo}*3 + tab
+<p>Hola mundo</p>
+<p>Hola mundo</p>
+<p>Hola mundo</p>
+
+Ej.
+p{Hola mundo $}*3 + tab
+<p>Hola mundo 1</p>
+<p>Hola mundo 2</p>
+<p>Hola mundo 3</p>
+
+Ej.
+div.contenedor-${Contenido $}*5
+<div class="contenedor-1">Contenido 1</div>
+<div class="contenedor-2">Contenido 2</div>
+<div class="contenedor-3">Contenido 3</div>
+<div class="contenedor-4">Contenido 4</div>
+<div class="contenedor-5">Contenido 5</div>
+
+
+
+
+
+
