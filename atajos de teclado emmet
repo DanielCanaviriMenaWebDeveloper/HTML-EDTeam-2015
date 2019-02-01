@@ -76,7 +76,29 @@ div.contenedor-${Contenido $}*5
 <div class="contenedor-4">Contenido 4</div>
 <div class="contenedor-5">Contenido 5</div>
 
+Ej.
+ul>li{Item $@5}*5
+<ul>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+    <li>Item 8</li>
+    <li>Item 9</li>    
+</ul>
 
+=========================================
+
+Copia de lineas hacia abajo 
+Mayus + alt + abajo
+
+Copia de Lineas arriba
+Mayus + alt + arriba
+
+Mover lineas arriba
+alt + arriba
+
+Mover lineas abajo
+alt + abajo
 
 
 
