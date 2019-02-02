@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Imagenes en HTML</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <link rel="icon" href="imagen.ico">
+        <style>
+            body{
+                padding-bottom: 25em;
+            }
+            img{
+                max-width: 100%; /* Ancho maximo de la imagen sera el 100% de su contenedor "La imagen nunca se desbordara de su contenedor" En EDGrid ya tiene esta propiedad al igual que Foundation, en Bootstrap no lo tiene: Se coloca la clase responsive-img */
+            }
+            figure{
+                background: #eee;
+                padding: 1em;
+            }
+            figure img{
+                width: 49%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Imágenes en HTML</h1>
+        <!-- 
+            Existen dos tipos de imágenes 
+                * Render, estan formadas por pixeles. En este tipo de imágenes tenemos tres formatos:
+                    - jpg,  son formato con perdida. Ideales para fotografía.
+                    - png, son formato sin pérdida, admite transparencias y es ideal para logos, capturas de pantalla e imágenes como mucho color sólido. 
+                    - gif, es un formato con poca profundidad de color (256) admite transparencias y animaciones.
+                * Vectoriales, son código xml que el navegador interpreta al vuelo.
+                    - svg
+         -->
+        <section>
+            <ul>
+                <li>Imágenes Render
+                    <ul>
+                        <li>.jpg</li>
+                        <li>.png</li>
+                        <li>.gif</li>
+                    </ul>
+                </li>
+                <li>Imágenes Vectoriales
+                    <ul>
+                        <li>.svg</li>
+                    </ul>
+                </li>    
+            </ul>
+        </section>
+        <section>
+            <h2>Etiqueta img</h2>
+            <!-- 
+                La etiqueta <img src="" alt="">
+                Requiere dos atributos:
+                src="" (Indica la ruta de la imagen)
+                alt="" (Indica un texto alternativo para las ocasiones en las que la imagen no se muestre, para los motores de búsqueda y para lectores de pantalla.)
+             -->
+             <h2>.jpg</h2>
+             <img src="mujer-small-2.jpg" alt="Mujer con lentes oscuros">
+             <h2>.png</h2>
+             <img src="circulo.png" alt="Circulo rojo">
+             <h2>.svg</h2>
+             <img src="logo.svg" alt="Logo de Sass">
+        </section>  
+        <section>
+            <h2>Comprimir imágenes para web</h2> 
+            <!-- 
+                Antes de comprimir debes de redimensionar la imagen a la resolución que necesitas.
+
+                El tamaño de la imagen debe ser depende la maquetación, si va a estar tu imagen en un: banner: 1200px a 1400px de ancho
+                sidebar: 300px 
+                pagina central: 600px o 700px pero primero siempre comprimirla  
+                Para Logotipo un peso de 10kb o 15kb recomendado.
+                
+                Las imágenes para web deben ser de 72ppp(puntos por pulgada)-Tener cuidado que el diseñador envie una imagen a 300ppp que es para impresión(imprenta) por ejemplo una imagen para un volante.
+
+                El formato jpg admite compresiones de 0% a 100%, entre mas compresion con este formato menos calidad.
+
+                El formato png se comprime en png8 (256 colores = 8 bytes).
+
+                Gif animado es mejor comprimirlo en Video
+             -->
+        </section>
+
+        <section>
+            <h2>Los elementos figure y figcaption de HTML5</h2>
+            <!-- 
+                <figure></figure> sirve para encerrar elementos multimedia como imagenes o videos acompañados de una leyenda con el elemento <figcaption></figcaption>
+
+                Ejemplo:
+
+                <figure>
+                    <img src="" alt="">
+                    <figcaption>
+                        //Aca la leyenda
+                    </figcaption>
+                </figure>
+             -->
+            <figure>
+                <img src="mujer-small-2.jpg" alt="Mujer con lentes oscuros">
+                <img src="juguete.jpg" alt="Oveja de peluche">
+                <figcaption>
+                    Mujer con lentes oscuros y oveja de peluche.
+                    Fuente: <a href="http://pexels.com">Pexels</a>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Elemento picture de HTML5</h2>
+            <picture>
+                <source srcset="juguete2.jpg" media="(min-width: 1000px">
+                <source srcset="hombre2.jpg" media="(min-width: 600px)">
+                <img src="mujer-small-2.jpg" alt="Mujer">
+            </picture>
+        </section>
+    </body>
+</html>
