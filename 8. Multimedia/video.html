@@ -6,8 +6,20 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Video</title>
         <style>
+           
+           body {
+               text-align: center;
+               padding-bottom: 15em;
+           }
             #video {
-                max-width: 100%; 
+                background: black;
+                width: 500px;
+                height: 300px; 
+            }
+            #video2 {
+                background: black;
+                width: 500px;
+                height: 300px; 
             }
         </style>
     </head>
@@ -84,10 +96,51 @@
             <audio src="audio.mp3" controls>Por favor actualiza tu navegador para escuchar este sorprendente audio</audio>       
         </section>
         <section>
+            <!-- 
+                Atributos:
+
+                controls  (boolean)
+                autoplay  (boolean)
+                loop      (boolean)
+                muted     (boolean) (Permite reproducir sin sonido)
+                poster    (string)  (Permite colocar una imagen personalizada para un video)
+            -->
             <h2>Video</h2>
-            <video src="video.mp4" id="video" controls></video>
+            <video 
+                src="video.mp4" 
+                id="video" 
+                controls
+                poster="poster.jpg" 
+                muted
+            ></video>
+            <h2>Creando un Reproductor Propio</h2>
+            <video src="video2.mp4" id="video2"></video>
+            <p>
+                <button onclick="reproducir()">Play</button>  <!-- Tecnica de onclick que ya no deberia usarse por buenas practicas de programación -->
+                <button onclick="pausar()">Pause</button>
+            </p>   
+            
         </section>
 
+        <section>
+            <h2>Video desde Youtube</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dX3P9VFmlzY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </section>
+        <script>
+            var v = document.getElementById("video2");
+            v.poster="poster2.jpg";
+
+            function reproducir(){
+                v.play(); /* Metodo de la API de video */
+            }
+
+            function pausar(){
+                v.pause();
+            }
+
+            /* API = Aplication Programing Interface */
+        </script>
         
     </body>
 </html>

@@ -18,3 +18,6 @@ TIP: ¿Cómo comprimir imágenes png para web? - Publicado el 23 ene. 2015
 
 https://www.youtube.com/watch?v=uJE5sRhm4Vg
 #edtaller 7 - ED GRID 1.2 (flexbox) - Documentación oficial (24/oct/2015)
+
+https://www.youtube.com/watch?v=oXbEkHx3uWA
+Trucos CSS (20) - Fondo de imagen con textura - Publicado el 13 sep. 2015
