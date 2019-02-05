@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Esta es la clase 9 donde veremos todo sobre Formularios">
+        <link rel="icon" href="imagen.ico">
+        <style>
+            body {
+                padding-bottom: 15rem;
+            }
+        </style>
+        <title>Clase 9 - Formularios</title>
+    </head>
+    <body>
+        <h1>Clase 9 - Formularios</h1>
+        <!-- 
+            Todo formulario debe encerrarse con la etiqueta <form action=""></form>
+            El atributo action envia el formulario a otro archivo para ser procesado.
+            En este caso vamos a poner un html en el action, solo como ejemplo.
+            Porque no tiene ninguna utilidad (HTML no es un lenguaje de programación)
+
+            Tres formas de enviar el formulario
+                1. <input type="submit"> (recomendada)
+                2. <button>Enviar</button> (alternativa) De manera predeterminada funciona como un submit
+                3. Presionar Enter dentro de un input (Que sirven en casos como un search=Busqueda)
+         -->
+
+        <h2>Ejemplo de search</h2>
+        <form action="http://www.google.com/search" method="get">
+            <input type="text" name="q">
+        </form>
+    </body>
+</html>
