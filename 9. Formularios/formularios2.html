@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <style>
+            body {
+                    padding-bottom: 15rem;
+            }
+    
+            div{
+                    margin-bottom: 1em; 
+            }
+        </style>
+        <title>Formularios 2</title>
+    </head>
+    <body>
+        <h1>Formularios (continuación)</h1>
+        <!-- 
+            Lo mas resaltante que nos trae HTML5 para formularios es:
+            1. Nuevos tipos de input
+            2. Validación desde el navegador (no al 100%)
+            3. Nuevos atributos 
+        -->
+        <form action="procesar.html">
+            <div>
+                <label for="email">Correo</label>
+                <input type="email" id="email" placeholder="Tu correo">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password">
+            </div>
+            <div>
+                <label for="number">Tu edad</label>
+                <input type="number" id="number"
+                    min="18"
+                    max="50"
+                    step="2"                
+                >
+            </div>
+            <!-- 
+                Atributos:
+                min (valor minimo)
+                max (valor maximo)
+                step (rango de salto)
+            -->
+            <div>
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono"> 
+            </div>
+            <div>
+                <input type="range"
+                    min="0"
+                    max="10"
+                    step="2"
+                >
+            </div>
+            <div>
+                <input type="color">
+            </div>
+            <div>
+                <input type="datetime-local">
+                <!-- 
+                    Variaciones (por type):
+                    month
+                    week
+                    time
+                    datatime-local
+                -->
+            </div>
+            <!-- 
+                Tres elementos nuevos en HTML5
+                datalist (para generar autocomplete em los inputs)
+                keygen (para generar claves privadas como tokens que conectan al cliente con el servidor)
+                output (para devolver resultados de operaciones con JS)
+            -->
+            <!-- 
+                Autocomplete en inputs con datalist.
+                Dentro del <datalist></datalist> se ponen las opciones con la etiqueta <option value="">. El valor del atributo value="" indica la opcion. Por ultimo, el id del datalist debe conincidir con el atributo list del input.
+             -->
+            <div>
+                <label for="lenguaje-favorito">¿Que lenguaje te gusta más</label>
+                <input type="text" id="lenguaje-favorito" list="lenguajes">
+                <datalist id="lenguajes">
+                    <option value="html"></option>
+                    <option value="css"></option>
+                    <option value="javascript"></option>
+                    <option value="php"></option>
+                    <option value="python"></option>
+                </datalist>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+
+        <!-- 
+            Atributos de formularios
+            Booleans:
+
+            required      (campo obligatorio)
+            disabled      (campo desactivado)
+            readonly      (campo de solo lectura)
+            checked       (checkbox marcado)
+            selected      (option de un select este seleccionado)
+            multiple      (para que un select admita multiples options)
+            autofocus     (para que un campo este seleccionado por defecto)
+            novalidate    (para no validar el campo o form completo)
+            hidden        (para ocultar un campo)
+
+            Otros atributos
+
+            accesskey    (atajo de teclado para activar un campo, cambia segun el navegador: Chorme alt + accesskey)
+            maxlength    (longitud maxima permitida en un campo)
+            min          (valor minimo de un number o un range)
+            max          (valor maximo)
+            step         (saltos de valor)
+            tabindex     (como valor se pasa un numero que indica la posicion del campo al presionar tab)
+            autocomplete (recibe valores on|off para indicar si el navegador autocompletara el formulario)
+            cols         (ancho por columnas)
+            rows         (alto por filas)
+            size         (alto por filas para los select multiple)
+            for          (conecta al label con el campo, debe coincidir con el id del campo al que se refiere)
+            placeholder  (para poner un texto de muestra)
+            type         (define el tipo de input o button)
+            action       (indica el destino del formulario)
+            method       (indica como se envian los datos del formulario)  
+
+            Revisar el atributo title
+        -->
+    </body>
+</html>

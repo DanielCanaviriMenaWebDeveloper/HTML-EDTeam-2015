@@ -10,6 +10,16 @@
             body {
                 padding-bottom: 15rem;
             }
+
+            div{
+                margin-bottom: 1em; 
+            }
+            .block{
+                display: block;
+            }
+            fieldset {
+                margin-bottom: 1em;
+            }
         </style>
         <title>Clase 9 - Formularios</title>
     </head>
@@ -24,12 +34,213 @@
             Tres formas de enviar el formulario
                 1. <input type="submit"> (recomendada)
                 2. <button>Enviar</button> (alternativa) De manera predeterminada funciona como un submit
-                3. Presionar Enter dentro de un input (Que sirven en casos como un search=Busqueda)
+                3. Presionar Enter dentro de un input (Que sirven en casos como un search = Busqueda)
+
+            El atributo method="" ya esto trabaja con otros Lenguajes, por ejemplo em PHP se usa el metodo : POST y GET, POST para envaria los datos de forma oculta y el metodo GET para enviar los datos a través de una URL 
          -->
+        <h2>Formas de Enviar el Formulario</h2>
+
+        <h2>Enviando formulario mediante un input type="submit" (Recomendado)</h2>
+        <form action="procesar.html" method="">
+            <input type="submit">
+        </form>
+
+        <h2>Enviando un formulario mediante un button (Alternativa)</h2>
+        <form action="procesar.html">
+            <button>Enviar Formulario</button>
+        </form>
+
+        <h2>Enviando un formulario mediante un input type="text" (Se usa en un search)</h2>
+        <form action="procesar.html">
+            <input type="text">
+        </form>
 
         <h2>Ejemplo de search</h2>
         <form action="http://www.google.com/search" method="get">
             <input type="text" name="q">
         </form>
+
+        <h2>Elementos de un Formulario</h2>
+
+        <form action="procesar.html">
+            <!-- 
+                El campo mas usado es el input
+                Existen muchos tipos de input que se distinguen con el atributo type=""
+                Los input no nesecitan etiqueta de cierre
+                Cada campo puede llevar una etiqueta <label for=""></label>
+                El valor del atributo for debe coincidir con el id del campo al que corresponde
+            -->
+            <h2>input - text</h2>
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div>
+                    <label for="nombres">Nombres y apellidos</label>
+                    <input type="text" id="nombres" pattern="[0-9]">
+                </div>
+                <div>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="text" id="correo">
+                </div>
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="text" id="telefono" maxlength="8">
+                    <!-- 
+                        El atributo maxlength especifica el número máximo de caracteres permitidos en el elemento <input>.
+                        El atributo pattern nos permite validar un formulario usa Expresiones Regulares.
+                     -->
+                </div>
+            </fieldset>
+            <!--  
+                Nota: Para poder trabajar con rangos númericos solo se los puede realizar en un input de tipo number.
+
+            -->
+
+
+            <h2>input - checkbox</h2>
+
+            <fieldset>
+                <legend>Preferencias</legend>
+                <div>
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1">Checkbox 1</label>
+                    <br>
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2">Checkbox 2</label>
+                    <br>
+                    <input type="checkbox" id="checkbox3">
+                    <label for="checkbox3">Checkbox 3</label>
+                    <br>
+                    <input type="checkbox" id="checkbox4">
+                    <label for="checkbox4">Checkbox 4</label>
+                </div>
+            </fieldset>
+
+            <h2>input - Radio</h2>
+
+            <fieldset>
+                <legend>Grupo 1</legend>
+                <div>
+                    <input type="radio" id="radio1" name="grupo1">
+                    <label for="radio1">Radio 1</label>
+                    <br>
+                    <input type="radio" id="radio2" name="grupo1">
+                    <label for="radio2">Radio 2</label>
+                    <br>
+                    <input type="radio" id="radio3" name="grupo1">
+                    <label for="radio3">Radio 3</label>
+                    <br>
+                    <input type="radio" id="radio4" name="grupo1">
+                    <label for="radio4">Radio 4</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Grupo 2</legend>
+                <div>
+                    <input type="radio" id="radio1" name="grupo2">
+                    <label for="radio1">Radio 1</label>
+                    <br>
+                    <input type="radio" id="radio2" name="grupo2">
+                    <label for="radio2">Radio 2</label>
+                    <br>
+                    <input type="radio" id="radio3" name="grupo2">
+                    <label for="radio3">Radio 3</label>
+                    <br>
+                    <input type="radio" id="radio4" name="grupo2">
+                    <label for="radio4">Radio 4</label>
+                </div>
+                <!-- 
+                    El atributo name no hace nada en HTML (salvo especificar un area de acción para los input type="radio"). Sin embargo, todos los campos deberian llevar el atributo name porque los lenguajes de backend los usan para obtener los datos de estos.
+                -->
+            </fieldset>
+            <fieldset>
+                <legend>Otra información</legend>
+                <!-- 
+                    Select
+                    Dibuja una lista despegable de opciones, cada una con la etiqueta <option>
+                -->
+                <h2>select</h2>
+                <div>
+                    <label for="edad" class="block">Selecciona tu edad</label>
+                    <select name="edad" id="edad">
+                        <option value="0">Menos de 10 años</option>
+                        <option value="1">De 10 a 20 años</option>
+                        <option value="2">De 20 a 30 años</option>
+                        <option value="3">Más de 30 años</option>
+                    </select>
+                <!-- El atributo value no tiene utilidad en HTML, sin embargo es el que lee el lenguaje de servidor. Por tanto, el contenido de <option></option> es el que muestra el navegador y no necesariamente debe coincidir con el atributo value=""  -->
+                </div>
+                <!-- 
+                    Podemos hacer que las opciones dentro de un select se agrupen.
+                -->
+                <h2>Grupos de Select</h2>
+                <div>
+                    <label for="edad2" class="block">Selecciona tu edad</label>
+                    <!-- 
+                        Podemos hacer que las opciones dentro de un select se agrupen con la etiqueta <optgroup></optgroup>.
+                        Con el atributo label="" le damos un nombre a cada grupo.
+                    -->
+                    <select name="edad" id="edad2">
+                        <optgroup label="Niños y Jovenes">
+                            <option value="0">Menos de 10 años</option>
+                            <option value="1">De 10 a 20 años</option>
+                        </optgroup>
+                        <optgroup label="Adultos">
+                            <option value="2">De 20 a 30 años</option>
+                            <option value="3">De 30 a 40 años</option>
+                            <option value="4">De 40 a 50 años</option>
+                            <option value="5">De 50 a 60 años</option>
+                        </optgroup>
+                        <optgroup label="Adultos Mayores">
+                            <option value="6">Mas de 60 años</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <h2>Con el atributo multiple</h2>
+                <div>
+                    <label for="edad3" class="block">Selecciona tu edad</label>
+                    <select name="edad" id="edad3" multiple size="10">
+                        <!-- El atributo multiple (boolean)permite escoger multiples opciones (presionando la tecla CTRL) y cambia el formato de lista a caja.  -->
+                        <!-- El atributo size="" permite definir cuantas lineas de alto tendra la caja. -->
+                        <optgroup label="Niños y Jovenes">
+                            <option value="0">Menos de 10 años</option>
+                            <option value="1">De 10 a 20 años</option>
+                        </optgroup>
+                        <optgroup label="Adultos">
+                            <option value="2">De 20 a 30 años</option>
+                            <option value="3">De 30 a 40 años</option>
+                            <option value="4">De 40 a 50 años</option>
+                            <option value="5">De 50 a 60 años</option>
+                        </optgroup>
+                        <optgroup label="Adultos Mayores">
+                            <option value="6">Mas de 60 años</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <!-- 
+                    Textarea
+                    Dibuja un area de columnas y filas para estexto.
+                -->
+                <h2>textarea</h2>
+                <div>
+                    <label for="mensaje" class="block">Deje sumensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="50"rows="5" readonly>Aca viene un mensaje</textarea> 
+                    <!--Con el atributo readonly no puedo modificar el texto que esta dentro el textarea -->
+                </div>
+            </fieldset>
+            <!-- 
+                La etiqueta <fieldset></fieldset> agrupa campos. 
+                La etiqueta <legend></legend> asigna un nombre a dichos campos.
+             -->
+            <!-- 
+                El input type="submit" envia el formulario
+             -->
+            <div>
+                <input type="submit" value="Enviar Formulario">
+            </div>
+        </form>
     </body>
 </html>
+    
+    
