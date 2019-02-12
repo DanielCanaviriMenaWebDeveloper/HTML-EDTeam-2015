@@ -55,7 +55,7 @@
     */
 
     /*  Como mostrar mensajes de texto y valores de variables por Consola del Navegador,   
-        console.log("Mi nombre es "+profesor);
+        console.log("Mi nombre es " + profesor);
     */
     
     /*
