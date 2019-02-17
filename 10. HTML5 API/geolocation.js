@@ -35,13 +35,13 @@ function mostrarPosicion(posicion){ //El parametro posicion me permite saber que
             lng: longi
         },
         zoom: 16,
-        mapTypeId:'satellite'
+        scrollwheel: true,
+        mapTypeId: google.maps.MapTypeId.SATELLITE // (ROADMAP)
     }
     var map = new google.maps.Map(elemento,opciones);
     var mark = new google.maps.Marker({
         position: opciones.center, 
         map: map,
         title: 'Estas aqui'
-    }
-    );
+    });
 } 
