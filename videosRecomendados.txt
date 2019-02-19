@@ -24,3 +24,12 @@ Trucos CSS (20) - Fondo de imagen con textura - Publicado el 13 sep. 2015
 
 https://www.youtube.com/watch?v=jZPYRFS0RaU&list=PLv6CkzbbGAlX0-_-Ue9I0dlK0EV_9Sp3i&index=134
 #edtaller 8 - Noticias Octubre 2015 (31/oct/2015)
+
+https://www.youtube.com/watch?v=wrIxw-M0kkk
+Página web responsive desde cero con ED GRID
+
+https://www.youtube.com/watch?v=jEb8sCd4vx8
+#EDtaller 69 - Landing page responsive con EDgrid 2
+
+https://www.youtube.com/watch?v=SPXs8l1XQdA
+#EDtaller70 - Landing page responsive con EDgrid 2 (2da parte)

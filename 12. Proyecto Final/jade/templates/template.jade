@@ -1,0 +1,34 @@
+block config
+    include ../config/variables.jade
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="icon", href="img/imagen.ico")
+        title #{titulo} | #{sitio}
+        <meta name="description" content="#{descripcion}">
+        link(rel="icon" href="img/imagen.ico")
+        link(rel="stylesheet" href="css/styles.css")
+        link(rel="stylesheet" href="css/estilos2.css")
+    body
+        header.ed-container
+            .ed-item.web-20
+                include ../blocks/logo.jade
+            .ed-item.web-80
+                nav
+                    include ../blocks/menu.jade
+        #banner.ed-container
+            .ed-item
+                include ../blocks/banner.jade
+        .ed-container
+            main.ed-item.web-75
+                block main
+            aside.ed-item.web-25
+                .aside-inner
+                    block aside
+        footer
+            .ed-container
+                .ed-item
+                    include ../blocks/footer.jade
